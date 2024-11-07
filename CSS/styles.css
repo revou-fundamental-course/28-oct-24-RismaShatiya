@@ -1,0 +1,82 @@
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-sizing: border-box;
+}
+
+section {
+    flex: 1; 
+    margin: 10px; 
+}
+
+p {
+    text-align: justify;
+}
+
+.a {
+    line-height: 0;
+}
+
+
+button {
+    border: 0;
+    background-color: cadetblue;
+    padding: 8px;
+    border-radius: 8px;
+
+}
+
+#information,#information-two, .resul{
+    text-align: center;
+}
+.color-section, .disease {
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.text-center .result {
+    text-align: center;
+}
+
+.disease p, .disease h4 {
+    text-align: center;
+} 
+
+p #result {
+    align-items: center;
+}
+
+#result {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 320px){
+    main {
+        flex-direction: row;
+    }
+}

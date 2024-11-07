@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Section Form -->
+      <section>
+        <div>
+          <header>
+            <h1>Kalkulator BMI</h1>
+          </header>
+          
+          <article>
+            <p>Berat badan ideal adalah impian semua orang. 
+              Tidak hanya memiliki bentuk tubuh yang menunjang penampilan,
+              berat badan ideal juga menandakan kondisi tubuh yang sehat. 
+              Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI</p>
+              
+            </article>
+          </div>
+          
+          <form class="color-section">
+            <div>
+              <legend for="jenis-kelamin">Jenis Kelamin</legend>
+              <input
+                  type="radio"
+                  name="jenis_kelamin"
+                  value="pria"
+                />Pria
+                <input
+                    type="radio"
+                    name="jenis_kelamin"
+                    value="wanita"
+                  />Wanita
+            </div>
+            <br>
+            <div>
+              <label for="berat-badan">Berat Badan(Kg)</label>
+              <input id="berat-badan" type="number" >
+            </div>
+            <div>
+              <label for="umur">Usia (Tahun)</label>
+              <input id="umur" type="number" >
+            </div>
+            <div>
+              <label for="tinggi">Tinggi Badan (cm)</label>
+              <input id="tinggi" type="number" >
+            </div>
+            <div>
+              <button type="button" onclick="validateForm()">Hitung BMI</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+
+        <div>
+          <header>
+            <h4>Keunggulan Fitur</h4>
+          </header>
+          <p>1. Menghitung berat badan</p>
+          <p>2. Menentukan kategori berat badan ideal atau tidak</p>
+          <p>3. Mempersiapkan program penurunan berat badan</p>
+          <article>
+            <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa 
+              (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan
+              tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi 
+              dengan orang yang memenuhi syarat seperti dokter</p>
+
+              <p>
+                Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. 
+                Indeks Massa Tubuh (BMI) dihitung sebagai berat badan Anda (kg) dibagi dengan 
+                kuadrat tinggi badan Anda (m) atau BMI = kg/m <sup>2</sup>
+              </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section Result -->
+      <section>
+        <header>
+          <h1>Hasil</h1>
+        </header>
+
+        <!-- Hasil Kalkulasi -->
+        <div class="color-section text-center">
+            <h4 id="information"></h4>
+            <p class="result" id="result"></p>
+            <p id="information-two"></p>
+        </div>
+
+        <!-- Info dari Hasil -->
+        <article>
+          <p id="hasil-bmi"></p>
+          <p id="hasil-bmi2">
+          </p>
+          <p id="hasil-bmi3"></p>
+          <p id="hasil-bmi4"></p>
+          <div class="disease">
+            <h4>
+              Beberapa penyakit yang berasal dari kegemukan
+            </h4>
+            <p class="a">Diabetes</p>
+            <p class="a">Hipertensi</p>
+            <p class="a">Sakit Jantung</p>
+            <p class="a">Osteoarthritis</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <span>Made by Risma</span>
+    </footer>
+
+    <script src="JS/script.js"></script>
+  </body>
 </html>
